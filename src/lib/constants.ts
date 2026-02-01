@@ -3,7 +3,7 @@ export const SITE = {
   tagline: "Your voice. Your device. Your words.",
   description:
     "On-device voice transcription and AI rewriting. Private, fast, and built for Apple Silicon.",
-  url: "https://hushtype.com",
+  url: "https://solovoice.eu",
 };
 
 export const HERO = {

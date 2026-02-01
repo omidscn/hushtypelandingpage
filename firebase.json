@@ -2,13 +2,9 @@
   "hosting": {
     "public": "out",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ],
-    "headers": [
+    "cleanUrls": true,
+    "trailingSlash": false,
+"headers": [
       {
         "source": "**/*.@(js|css|jpg|jpeg|gif|png|svg|webp|woff2)",
         "headers": [

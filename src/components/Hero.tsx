@@ -51,6 +51,21 @@ export default function Hero() {
         <img src="/testflight.webp" alt="TestFlight" width={35} height={35} className="rounded" />
         <span>{HERO.badge}</span>
       </div>
+
+      {/* Trust badges */}
+      <div className="animate-fade-in-up-delay-4 mt-10 rounded-2xl px-8 py-5">
+        <div className="flex flex-wrap items-center justify-center gap-8">
+          <div className="flex items-center gap-3">
+            <img src="/gdpr-badge.png" alt="GDPR Compliant" width={100} height={50} className="rounded" />
+            <span className="text-sm font-medium text-white/80"></span>
+          </div>
+          <div className="h-6 w-px bg-white/10" />
+          <div className="flex items-center gap-3">
+            <img src="/dsgvo.png" alt="DSGVO Konform" width={100} height={60} className="rounded" />
+            <span className="text-sm font-medium text-white/80"></span>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

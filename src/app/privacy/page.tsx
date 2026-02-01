@@ -201,10 +201,10 @@ export default function PrivacyPolicy() {
             <p>
               If you have questions about this privacy policy, contact us at{" "}
               <a
-                href="mailto:hello@hushtype.com"
+                href="mailto:omid@deviify.com"
                 className="text-white underline decoration-white/20 underline-offset-2 transition-colors hover:decoration-white/50"
               >
-                hello@hushtype.com
+                omid@deviify.com
               </a>
               .
             </p>
