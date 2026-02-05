@@ -1,9 +1,9 @@
 "use client";
 
-import { PLATFORM_CARDS } from "@/lib/constants";
+import { useDictionary } from "@/lib/DictionaryProvider";
 import { useScrollAnimation } from "@/lib/useScrollAnimation";
 
-function PlatformIcon({ icon }: { icon: "mac" | "iphone" | "keyboard" }) {
+function PlatformIcon({ icon }: { icon: string }) {
   const props = { width: 28, height: 28, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: 1.5, strokeLinecap: "round" as const, strokeLinejoin: "round" as const };
 
   if (icon === "mac") {
@@ -31,30 +31,33 @@ function PlatformIcon({ icon }: { icon: "mac" | "iphone" | "keyboard" }) {
   );
 }
 
+const cardIcons = ["mac", "iphone", "keyboard"] as const;
+
 export default function PlatformCards() {
   const ref = useScrollAnimation<HTMLElement>();
+  const { dict } = useDictionary();
 
   return (
     <section ref={ref} className="scroll-reveal relative z-10 px-6 py-24">
       <div className="mx-auto max-w-6xl">
         <h2 className="mb-4 text-center text-sm font-medium tracking-widest uppercase text-text-tertiary">
-          Available on
+          {dict.platformCards.sectionLabel}
         </h2>
         <p className="mx-auto mb-4 max-w-lg text-center text-2xl font-semibold text-white md:text-3xl">
-          Three surfaces. One experience.
+          {dict.platformCards.sectionTitle}
         </p>
         <div className="mb-16 flex items-center justify-center gap-2">
           <img src="/icloud.png" alt="iCloud Sync" width={35} height={35} className="rounded" />
-          <p className="text-sm text-text-tertiary">Synced seamlessly via iCloud</p>
+          <p className="text-sm text-text-tertiary">{dict.platformCards.syncLabel}</p>
         </div>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {PLATFORM_CARDS.map((card) => (
+          {dict.platformCards.cards.map((card, i) => (
             <div
               key={card.title}
               className="card-glow group rounded-2xl border border-border bg-bg-card p-8 transition-all duration-500 hover:border-border-hover hover:bg-bg-card-hover"
             >
               <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-white/[0.04] text-text-secondary transition-colors duration-300 group-hover:text-white">
-                <PlatformIcon icon={card.icon} />
+                <PlatformIcon icon={cardIcons[i]} />
               </div>
               <h3 className="text-lg font-semibold text-white">{card.title}</h3>
               <p className="mt-1 text-sm text-text-tertiary">{card.subtitle}</p>
