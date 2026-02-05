@@ -1,0 +1,202 @@
+{
+  "metadata": {
+    "title": "Solo \u2014 Spracherkennung & KI-Umschreibung auf dem Ger\u00e4t",
+    "description": "Solo transkribiert deine Sprache und \u00fcberarbeitet sie mit KI \u2014 komplett auf deinem Ger\u00e4t. Keine Cloud. Keine Latenz. Kein Kompromiss. Entwickelt f\u00fcr Apple Silicon.",
+    "ogTitle": "Solo \u2014 Your voice. Your device. Your words.",
+    "ogDescription": "Spracherkennung und KI-Umschreibung auf dem Ger\u00e4t. Privat, schnell und f\u00fcr Apple Silicon entwickelt."
+  },
+  "header": {
+    "brand": "Solo",
+    "cta": "Warteliste"
+  },
+  "hero": {
+    "headline": "Your voice. Your device. Your words.",
+    "subhead": "Solo transkribiert deine Sprache und \u00fcberarbeitet sie mit KI \u2014 komplett auf deinem Ger\u00e4t. Keine Cloud. Keine Latenz. Kein Kompromiss.",
+    "ctaMac": "Auf die Warteliste",
+    "ctaIphone": "Mehr erfahren",
+    "badge": "Sei dabei \u2014 macOS 26+ / iOS 26+ / iPadOS 26+"
+  },
+  "platformCards": {
+    "sectionLabel": "Verf\u00fcgbar auf",
+    "sectionTitle": "Drei Oberfl\u00e4chen. Ein Erlebnis.",
+    "syncLabel": "Nahtlos synchronisiert \u00fcber iCloud",
+    "cards": [
+      {
+        "title": "macOS",
+        "subtitle": "Men\u00fcleisten-App",
+        "features": [
+          "Lebt in deiner Men\u00fcleiste \u2014 immer nur einen Shortcut entfernt",
+          "Dr\u00fccke Option + Leertaste zum Diktieren",
+          "Text erscheint direkt am Cursor"
+        ]
+      },
+      {
+        "title": "iPhone & iPad",
+        "subtitle": "Eigenst\u00e4ndige App",
+        "features": [
+          "Tippen zum Aufnehmen, loslassen zum Transkribieren",
+          "Mit einem Tipp in die Zwischenablage",
+          "iCloud-Verlauf \u00fcber alle Ger\u00e4te synchronisiert"
+        ]
+      },
+      {
+        "title": "iOS & iPadOS Keyboard",
+        "subtitle": "Systemtastatur-Erweiterung",
+        "features": [
+          "Mikrofon-Taste auf deiner Tastatur",
+          "Direkte Texteingabe",
+          "Funktioniert in jeder App"
+        ]
+      }
+    ]
+  },
+  "pipeline": {
+    "sectionLabel": "So funktioniert\u2019s",
+    "title": "Zwei KI-Modelle. Ein nahtloser Ablauf.",
+    "steps": [
+      { "label": "Deine Stimme" },
+      { "label": "WhisperKit", "detail": "Sprache \u2192 Text" },
+      { "label": "Apple Foundation Models", "detail": "KI-\u00dcberarbeitung" },
+      { "label": "Fertiger Text" }
+    ]
+  },
+  "privacy": {
+    "sectionLabel": "Datenschutz",
+    "title": "Privat durch Architektur, nicht durch Versprechen.",
+    "points": [
+      {
+        "title": "Keine Cloud-Verarbeitung",
+        "description": "Jedes Modell l\u00e4uft auf deinem Apple-Silicon-Chip. Deine Worte verlassen nie dein Ger\u00e4t."
+      },
+      {
+        "title": "Kein Netzwerk erforderlich",
+        "description": "Funktioniert im Flugmodus, offline oder hinter jeder Firewall. Kein Internet n\u00f6tig."
+      },
+      {
+        "title": "Keine Analyse oder Tracking",
+        "description": "Keine Telemetrie, keine Nutzungsdaten, keine Drittanbieter-SDKs. Was du sagst, bleibt bei dir."
+      }
+    ]
+  },
+  "features": {
+    "sectionLabel": "Funktionen",
+    "sectionTitle": "Alles, was du zum Diktieren brauchst",
+    "items": [
+      {
+        "title": "Schreibstile",
+        "description": "W\u00e4hle zwischen lockeren, professionellen, pr\u00e4gnanten oder ausf\u00fchrlichen Umformulierungen."
+      },
+      {
+        "title": "Funktioniert \u00fcberall",
+        "description": "Nutze Solo in jedem Textfeld \u2014 E-Mails, Nachrichten, Dokumente, Code-Editoren und mehr."
+      },
+      {
+        "title": "Verlauf & Sync",
+        "description": "Jede Transkription wird gespeichert und \u00fcber iCloud auf all deinen Apple-Ger\u00e4ten synchronisiert."
+      },
+      {
+        "title": "Apple Silicon nativ",
+        "description": "Von Grund auf f\u00fcr M- und A-Chips entwickelt. Extrem effizient."
+      }
+    ]
+  },
+  "cta": {
+    "headline": "Bereit, frei zu sprechen?",
+    "subhead": "Sei unter den Ersten, die Solo ausprobieren. Melde dich f\u00fcr den Early Access an.",
+    "formPlaceholder": "du@beispiel.de",
+    "formButton": "Auf die Warteliste",
+    "submitting": "Wird eingetragen...",
+    "successHeadline": "Du bist auf der Liste!",
+    "successMessage": "Wir benachrichtigen dich, wenn Solo bereit ist.",
+    "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    "errorNetwork": "Netzwerkfehler. Bitte \u00fcberpr\u00fcfe deine Verbindung und versuche es erneut."
+  },
+  "footer": {
+    "brand": "Solo",
+    "privacyPolicy": "Datenschutzerkl\u00e4rung",
+    "contact": "Kontakt",
+    "copyright": "\u00a9 {year} Solo. Alle Rechte vorbehalten."
+  },
+  "privacyPage": {
+    "metaTitle": "Datenschutzerkl\u00e4rung \u2014 Solo",
+    "metaDescription": "Solos Datenschutzerkl\u00e4rung. Alle Verarbeitung findet auf deinem Ger\u00e4t statt. Es werden keine Daten erfasst, \u00fcbertragen oder extern gespeichert.",
+    "title": "Datenschutzerkl\u00e4rung",
+    "lastUpdated": "Zuletzt aktualisiert: 1. Februar 2025",
+    "overview": {
+      "heading": "\u00dcberblick",
+      "text": "Solo basiert auf einem grundlegenden Prinzip: Deine Daten verlassen nie dein Ger\u00e4t. Es gibt keine Cloud-Komponente, keinen Remote-Server und keine Analyse-Infrastruktur. Diese Erkl\u00e4rung erl\u00e4utert, auf welche Daten Solo zugreift, wie sie verarbeitet werden und wo sie gespeichert werden."
+    },
+    "dataProcessing": {
+      "heading": "Datenverarbeitung",
+      "intro": "Solo nutzt zwei KI-Modelle auf dem Ger\u00e4t:",
+      "whisperKit": "wandelt deine Sprache in Text um. Das Audio wird vollst\u00e4ndig auf deinem Ger\u00e4t mit Apples Neural Engine verarbeitet und nie \u00fcber ein Netzwerk \u00fcbertragen.",
+      "foundationModels": "\u00fcberarbeitet das Rohtranskript zu einem ausgefeilten Text. Dieses Modell l\u00e4uft lokal auf deinem Apple-Silicon-Chip.",
+      "afterList": "Keine Audioaufnahmen, Transkripte oder \u00fcberarbeiteten Texte werden an einen externen Server gesendet \u2014 nicht an uns, nicht an Apple und nicht an Dritte."
+    },
+    "microphoneAccess": {
+      "heading": "Mikrofonzugriff",
+      "text": "Solo ben\u00f6tigt Mikrofonzugriff, um deine Stimme f\u00fcr die Transkription aufzunehmen. Audio wird im Arbeitsspeicher erfasst, von WhisperKit verarbeitet und sofort nach der Transkription verworfen. Es werden keine Audiodateien auf der Festplatte gespeichert oder \u00fcbertragen."
+    },
+    "historySync": {
+      "heading": "Verlauf & iCloud-Synchronisierung",
+      "textBefore": "Solo speichert einen lokalen Verlauf deiner Transkriptionen, damit du sie \u00fcberpr\u00fcfen und wiederverwenden kannst. Wenn du bei iCloud angemeldet bist, wird dieser Verlauf \u00fcber iCloud Key-Value Storage (iCloud KVS) auf deinen Apple-Ger\u00e4ten synchronisiert. Diese Synchronisierung wird vollst\u00e4ndig von Apples Infrastruktur verwaltet und unterliegt ",
+      "applePolicyLink": "Apples Datenschutzrichtlinie",
+      "textAfter": ".",
+      "text2": "Verlaufseintr\u00e4ge werden bis zu 90 Tage aufbewahrt und auf 50 Eintr\u00e4ge begrenzt. Du kannst deinen Verlauf jederzeit in der App l\u00f6schen."
+    },
+    "keyboardExtension": {
+      "heading": "Tastaturerweiterung",
+      "text": "Solo enth\u00e4lt eine Tastaturerweiterung f\u00fcr iOS und iPadOS. Die Tastaturerweiterung fordert Open Access ausschlie\u00dflich an, um \u00fcber einen gemeinsamen App-Group-Container mit der Solo-Hauptapp zu kommunizieren. Sie greift nicht auf das Netzwerk zu, und es werden keine Tastatureingaben oder Texteingaben erfasst oder \u00fcbertragen."
+    },
+    "networkUsage": {
+      "heading": "Netzwerknutzung",
+      "text": "Solo f\u00fchrt w\u00e4hrend des normalen Betriebs keine Netzwerkanfragen durch. Die macOS-App enth\u00e4lt eine Netzwerk-Client-Berechtigung ausschlie\u00dflich f\u00fcr den erstmaligen Modell-Download \u00fcber WhisperKit, der das Spracherkennungsmodell beim ersten Start von Apples Servern l\u00e4dt. Nachdem das Modell lokal zwischengespeichert wurde, ist kein weiterer Netzwerkzugriff erforderlich. Solo funktioniert vollst\u00e4ndig offline."
+    },
+    "analytics": {
+      "heading": "Analyse & Tracking",
+      "text": "Solo enth\u00e4lt keine Analyse-Frameworks, Absturzmelder, Werbe-SDKs oder Tracking-Code von Drittanbietern. Wir erfassen keine Nutzungsdaten, Ger\u00e4teinformationen oder jegliche Form von Telemetrie."
+    },
+    "thirdParty": {
+      "heading": "Drittanbieterdienste",
+      "text": "Solo ist mit keinen Drittanbieterdiensten integriert. Die einzige externe Abh\u00e4ngigkeit ist Apples iCloud KVS f\u00fcr die optionale Verlaufssynchronisierung, die durch deine Apple-ID-Einstellungen und Apples eigene Datenschutzrichtlinie geregelt wird."
+    },
+    "dataStorage": {
+      "heading": "Datenspeicherung",
+      "intro": "Alle Daten werden lokal auf deinem Ger\u00e4t gespeichert:",
+      "macOS": "Der Verlauf wird als JSON-Datei im Application-Support-Verzeichnis der App innerhalb der macOS-Sandbox gespeichert.",
+      "iOS": "Der Verlauf wird im gemeinsamen App-Group-Container gespeichert und ist nur f\u00fcr Solo und seine Tastaturerweiterung zug\u00e4nglich.",
+      "preferencesLabel": "Benutzereinstellungen",
+      "preferences": "(Schreibstil, benutzerdefinierte Anweisungen) werden in UserDefaults auf deinem Ger\u00e4t gespeichert."
+    },
+    "childrenPrivacy": {
+      "heading": "Datenschutz f\u00fcr Kinder",
+      "text": "Solo sammelt keine pers\u00f6nlichen Informationen von niemandem, einschlie\u00dflich Kindern unter 13 Jahren. Da keine Daten von der App \u00fcbertragen werden, gibt es keinen Mechanismus, durch den pers\u00f6nliche Informationen erfasst werden k\u00f6nnten."
+    },
+    "changes": {
+      "heading": "\u00c4nderungen dieser Erkl\u00e4rung",
+      "text": "Wenn diese Datenschutzerkl\u00e4rung aktualisiert wird, werden die \u00c4nderungen auf dieser Seite mit einem aktualisierten Datum ver\u00f6ffentlicht. Da Solo keine Daten erfasst, ist es unwahrscheinlich, dass \u00c4nderungen deinen Datenschutz beeinflussen."
+    },
+    "privacyContact": {
+      "heading": "Kontakt",
+      "textBefore": "Bei Fragen zu dieser Datenschutzerkl\u00e4rung kontaktiere uns unter ",
+      "textAfter": "."
+    }
+  },
+  "contactPage": {
+    "metaTitle": "Kontakt \u2014 Solo",
+    "metaDescription": "Nimm Kontakt mit dem Solo-Team auf. Wir freuen uns, von dir zu h\u00f6ren.",
+    "title": "Kontakt",
+    "subtitle": "Hast du eine Frage, Feedback oder m\u00f6chtest einfach Hallo sagen? Wir freuen uns, von dir zu h\u00f6ren.",
+    "getInTouch": "Kontakt aufnehmen",
+    "ceoLabel": "CEO",
+    "ceoName": "Omid Bicker",
+    "emailLabel": "E-Mail",
+    "emailNote": "Du kannst uns auch direkt per E-Mail erreichen, wenn du das Formular nicht verwenden m\u00f6chtest.",
+    "sendMessage": "Nachricht senden",
+    "nameLabel": "Name",
+    "namePlaceholder": "Dein Name",
+    "messageLabel": "Nachricht",
+    "messagePlaceholder": "Wie k\u00f6nnen wir helfen?",
+    "submitButton": "Nachricht senden"
+  }
+}

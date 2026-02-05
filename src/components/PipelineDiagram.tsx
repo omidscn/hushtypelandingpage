@@ -1,6 +1,6 @@
 "use client";
 
-import { PIPELINE } from "@/lib/constants";
+import { useDictionary } from "@/lib/DictionaryProvider";
 import { useScrollAnimation } from "@/lib/useScrollAnimation";
 
 function StepIcon({ icon }: { icon: string }) {
@@ -66,6 +66,9 @@ const colorMap = {
   },
 };
 
+const stepColors = ["neutral", "indigo", "violet", "neutral"] as const;
+const stepIcons = ["mic", "waveform", "sparkle", "document"] as const;
+
 function Arrow() {
   return (
     <div className="flex items-center justify-center text-text-tertiary">
@@ -103,19 +106,20 @@ function Arrow() {
 
 export default function PipelineDiagram() {
   const ref = useScrollAnimation<HTMLElement>();
+  const { dict } = useDictionary();
 
   return (
     <section ref={ref} id="pipeline" className="scroll-reveal relative z-10 px-6 py-24">
       <div className="mx-auto max-w-6xl text-center">
         <h2 className="mb-4 text-sm font-medium tracking-widest uppercase text-text-tertiary">
-          How it works
+          {dict.pipeline.sectionLabel}
         </h2>
         <p className="mx-auto mb-16 max-w-lg text-2xl font-semibold text-white md:text-3xl">
-          {PIPELINE.title}
+          {dict.pipeline.title}
         </p>
         <div className="flex flex-col items-center gap-4 lg:flex-row lg:justify-center">
-          {PIPELINE.steps.map((step, i) => {
-            const colors = colorMap[step.color];
+          {dict.pipeline.steps.map((step, i) => {
+            const colors = colorMap[stepColors[i]];
             return (
               <div key={step.label} className="flex flex-col items-center gap-4 lg:flex-row">
                 <div
@@ -123,7 +127,7 @@ export default function PipelineDiagram() {
                   style={{ minWidth: 160 }}
                 >
                   <div className={colors.text}>
-                    <StepIcon icon={step.icon} />
+                    <StepIcon icon={stepIcons[i]} />
                   </div>
                   <p className="mt-3 text-sm font-semibold text-white">
                     {step.label}
@@ -134,7 +138,7 @@ export default function PipelineDiagram() {
                     </p>
                   )}
                 </div>
-                {i < PIPELINE.steps.length - 1 && <Arrow />}
+                {i < dict.pipeline.steps.length - 1 && <Arrow />}
               </div>
             );
           })}

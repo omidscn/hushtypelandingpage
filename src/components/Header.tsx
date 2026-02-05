@@ -1,9 +1,19 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { useDictionary } from "@/lib/DictionaryProvider";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const { dict, locale } = useDictionary();
+  const pathname = usePathname();
+
+  const isGerman = locale === "de";
+  const switchPath = isGerman
+    ? pathname.replace(/^\/de/, "") || "/"
+    : `/de${pathname}`;
+  const switchLabel = isGerman ? "EN" : "DE";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
@@ -20,7 +30,7 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="/" className="flex items-center gap-2.5">
+        <a href={isGerman ? "/de" : "/"} className="flex items-center gap-2.5">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M2 10v3"/>
             <path d="M6 6v11"/>
@@ -29,14 +39,22 @@ export default function Header() {
             <path d="M18 5v13"/>
             <path d="M22 10v3"/>
           </svg>
-          <span className="text-lg font-semibold tracking-tight text-white">Solo</span>
+          <span className="text-lg font-semibold tracking-tight text-white">{dict.header.brand}</span>
         </a>
-        <a
-          href="#download"
-          className="rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm font-medium text-white transition-all duration-300 hover:bg-white/10 hover:border-white/20"
-        >
-          Join Waitlist
-        </a>
+        <div className="flex items-center gap-4">
+          <a
+            href={switchPath}
+            className="text-sm font-medium text-white/60 transition-colors hover:text-white"
+          >
+            {switchLabel}
+          </a>
+          <a
+            href="#download"
+            className="rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm font-medium text-white transition-all duration-300 hover:bg-white/10 hover:border-white/20"
+          >
+            {dict.header.cta}
+          </a>
+        </div>
       </div>
     </header>
   );

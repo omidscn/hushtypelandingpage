@@ -1,13 +1,14 @@
 "use client";
 
 import { useState, FormEvent } from "react";
-import { CTA } from "@/lib/constants";
+import { useDictionary } from "@/lib/DictionaryProvider";
 import { useScrollAnimation } from "@/lib/useScrollAnimation";
 
 type FormState = "idle" | "submitting" | "success" | "error";
 
 export default function CTASection() {
   const ref = useScrollAnimation<HTMLElement>();
+  const { dict } = useDictionary();
   const [email, setEmail] = useState("");
   const [state, setState] = useState<FormState>("idle");
   const [errorMsg, setErrorMsg] = useState("");
@@ -28,11 +29,11 @@ export default function CTASection() {
         setState("success");
       } else {
         const data = await res.json().catch(() => null);
-        setErrorMsg(data?.errors?.[0]?.message ?? "Something went wrong. Please try again.");
+        setErrorMsg(data?.errors?.[0]?.message ?? dict.cta.errorGeneric);
         setState("error");
       }
     } catch {
-      setErrorMsg("Network error. Please check your connection and try again.");
+      setErrorMsg(dict.cta.errorNetwork);
       setState("error");
     }
   }
@@ -48,18 +49,18 @@ export default function CTASection() {
             {state === "success" ? (
               <div className="animate-fade-in-up">
                 <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">
-                  {CTA.successHeadline}
+                  {dict.cta.successHeadline}
                 </h2>
-                <p className="mt-4 text-lg text-text-secondary">{CTA.successMessage}</p>
+                <p className="mt-4 text-lg text-text-secondary">{dict.cta.successMessage}</p>
               </div>
             ) : (
               <>
                 <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">
-                  {CTA.headline}
+                  {dict.cta.headline}
                 </h2>
                 <div className="mt-4 flex items-center justify-center gap-2 text-lg text-text-secondary">
                   <img src="/testflight.webp" alt="TestFlight" width={35} height={35} className="rounded" />
-                  <p>{CTA.subhead}</p>
+                  <p>{dict.cta.subhead}</p>
                 </div>
 
                 <form
@@ -72,7 +73,7 @@ export default function CTASection() {
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder={CTA.formPlaceholder}
+                    placeholder={dict.cta.formPlaceholder}
                     className="min-h-[44px] w-full rounded-full bg-white px-6 py-3.5 text-[16px] text-black placeholder-gray-500 outline-none focus:ring-2 focus:ring-white/30 sm:w-72"
                   />
                   <button
@@ -80,7 +81,7 @@ export default function CTASection() {
                     disabled={state === "submitting"}
                     className="inline-flex min-h-[44px] w-full items-center justify-center gap-2.5 rounded-full bg-white px-7 py-3.5 text-[15px] font-medium text-black transition-all duration-300 hover:bg-white/90 hover:shadow-[0_0_40px_rgba(255,255,255,0.15)] disabled:opacity-60 sm:w-auto"
                   >
-                    {state === "submitting" ? "Joining..." : CTA.formButton}
+                    {state === "submitting" ? dict.cta.submitting : dict.cta.formButton}
                   </button>
                 </form>
 

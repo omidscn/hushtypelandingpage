@@ -1,6 +1,6 @@
 "use client";
 
-import { PRIVACY } from "@/lib/constants";
+import { useDictionary } from "@/lib/DictionaryProvider";
 import { useScrollAnimation } from "@/lib/useScrollAnimation";
 
 function PrivacyIcon({ icon }: { icon: string }) {
@@ -38,8 +38,11 @@ function PrivacyIcon({ icon }: { icon: string }) {
   }
 }
 
+const pointIcons = ["cloud-off", "wifi-off", "eye-off"] as const;
+
 export default function PrivacySection() {
   const ref = useScrollAnimation<HTMLElement>();
+  const { dict } = useDictionary();
 
   return (
     <section ref={ref} className="scroll-reveal relative z-10 px-6 py-24">
@@ -47,17 +50,17 @@ export default function PrivacySection() {
         <div className="rounded-3xl border border-border bg-bg-card p-10 md:p-16">
           <div className="text-center">
             <h2 className="mb-4 text-sm font-medium tracking-widest uppercase text-text-tertiary">
-              Privacy
+              {dict.privacy.sectionLabel}
             </h2>
             <p className="mx-auto mb-16 max-w-2xl text-2xl font-semibold text-white md:text-3xl">
-              {PRIVACY.title}
+              {dict.privacy.title}
             </p>
           </div>
           <div className="grid gap-10 md:grid-cols-3">
-            {PRIVACY.points.map((point) => (
+            {dict.privacy.points.map((point, i) => (
               <div key={point.title} className="flex flex-col items-center text-center">
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/[0.04] text-text-secondary">
-                  <PrivacyIcon icon={point.icon} />
+                  <PrivacyIcon icon={pointIcons[i]} />
                 </div>
                 <h3 className="mt-5 text-base font-semibold text-white">{point.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-text-secondary">
