@@ -13,11 +13,20 @@ export async function generateMetadata(): Promise<Metadata> {
       url: "https://solovoice.eu",
       siteName: "Solo",
       type: "website",
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "Solo — On-device voice transcription and AI rewriting",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: dict.metadata.ogTitle,
       description: dict.metadata.ogDescription,
+      images: ["/og-image.png"],
     },
   };
 }
