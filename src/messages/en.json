@@ -1,0 +1,202 @@
+{
+  "metadata": {
+    "title": "Solo \u2014 On-Device Voice Transcription & AI Rewriting",
+    "description": "Solo transcribes your speech and rewrites it with AI \u2014 entirely on your device. No cloud. No latency. No compromise. Built for Apple Silicon.",
+    "ogTitle": "Solo \u2014 Your voice. Your device. Your words.",
+    "ogDescription": "On-device voice transcription and AI rewriting. Private, fast, and built for Apple Silicon."
+  },
+  "header": {
+    "brand": "Solo",
+    "cta": "Join Waitlist"
+  },
+  "hero": {
+    "headline": "Your voice. Your device. Your words.",
+    "subhead": "Solo transcribes your speech and rewrites it with AI \u2014 entirely on your device. No cloud. No latency. No compromise.",
+    "ctaMac": "Join the Waitlist",
+    "ctaIphone": "Learn More",
+    "badge": "Be the first \u2014 macOS 26+ / iOS 26+ / iPadOS 26+"
+  },
+  "platformCards": {
+    "sectionLabel": "Available on",
+    "sectionTitle": "Three surfaces. One experience.",
+    "syncLabel": "Synced seamlessly via iCloud",
+    "cards": [
+      {
+        "title": "macOS",
+        "subtitle": "Menu bar app",
+        "features": [
+          "Lives in your menu bar \u2014 always one shortcut away",
+          "Press Option + Space to start dictating",
+          "Text appears right at your cursor"
+        ]
+      },
+      {
+        "title": "iPhone & iPad",
+        "subtitle": "Standalone app",
+        "features": [
+          "Tap to record, release to transcribe",
+          "One-tap copy to clipboard",
+          "iCloud history synced across devices"
+        ]
+      },
+      {
+        "title": "iOS & iPadOS Keyboard",
+        "subtitle": "System keyboard extension",
+        "features": [
+          "Mic button on your keyboard",
+          "Direct text insertion",
+          "Works in any app"
+        ]
+      }
+    ]
+  },
+  "pipeline": {
+    "sectionLabel": "How it works",
+    "title": "Two AI models. One seamless flow.",
+    "steps": [
+      { "label": "Your Voice" },
+      { "label": "WhisperKit", "detail": "Speech \u2192 Text" },
+      { "label": "Apple Foundation Models", "detail": "AI Rewrite" },
+      { "label": "Polished Text" }
+    ]
+  },
+  "privacy": {
+    "sectionLabel": "Privacy",
+    "title": "Private by architecture, not by promise.",
+    "points": [
+      {
+        "title": "Zero cloud processing",
+        "description": "Every model runs on your Apple Silicon chip. Your words never leave your device."
+      },
+      {
+        "title": "No network required",
+        "description": "Works in airplane mode, offline, or behind any firewall. No internet needed."
+      },
+      {
+        "title": "No analytics or tracking",
+        "description": "No telemetry, no usage data, no third-party SDKs. What you say stays with you."
+      }
+    ]
+  },
+  "features": {
+    "sectionLabel": "Features",
+    "sectionTitle": "Everything you need to dictate",
+    "items": [
+      {
+        "title": "Writing Styles",
+        "description": "Choose from casual, professional, concise, or detailed rewrites to match your tone."
+      },
+      {
+        "title": "Works Everywhere",
+        "description": "Use Solo in any text field \u2014 emails, messages, documents, code editors, and more."
+      },
+      {
+        "title": "History & Sync",
+        "description": "Every transcription is saved and synced across your Apple devices via iCloud."
+      },
+      {
+        "title": "Apple Silicon Native",
+        "description": "Built from the ground up for M-series and A-series chips. Blazingly efficient."
+      }
+    ]
+  },
+  "cta": {
+    "headline": "Ready to speak freely?",
+    "subhead": "Be the first to try Solo. Sign up for early access.",
+    "formPlaceholder": "you@example.com",
+    "formButton": "Join the Waitlist",
+    "submitting": "Joining...",
+    "successHeadline": "You\u2019re on the list!",
+    "successMessage": "We\u2019ll notify you when Solo is ready.",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "errorNetwork": "Network error. Please check your connection and try again."
+  },
+  "footer": {
+    "brand": "Solo",
+    "privacyPolicy": "Privacy Policy",
+    "contact": "Contact",
+    "copyright": "\u00a9 {year} Solo. All rights reserved."
+  },
+  "privacyPage": {
+    "metaTitle": "Privacy Policy \u2014 Solo",
+    "metaDescription": "Solo\u2019s privacy policy. All processing happens on your device. No data is collected, transmitted, or stored remotely.",
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: February 1, 2025",
+    "overview": {
+      "heading": "Overview",
+      "text": "Solo is designed with a fundamental principle: your data never leaves your device. There is no cloud component, no remote server, and no analytics infrastructure. This policy explains what data Solo accesses, how it is processed, and where it is stored."
+    },
+    "dataProcessing": {
+      "heading": "Data Processing",
+      "intro": "Solo uses two on-device AI models to function:",
+      "whisperKit": "converts your speech into text. The audio is processed entirely on your device using Apple\u2019s Neural Engine and is never transmitted over a network.",
+      "foundationModels": "rewrites the raw transcript into polished text. This model runs locally on your Apple Silicon chip.",
+      "afterList": "No audio recordings, transcripts, or rewritten text are sent to any external server \u2014 not to us, not to Apple, and not to any third party."
+    },
+    "microphoneAccess": {
+      "heading": "Microphone Access",
+      "text": "Solo requires microphone access to record your voice for transcription. Audio is captured in-memory, processed by WhisperKit, and discarded immediately after transcription. No audio files are saved to disk or transmitted anywhere."
+    },
+    "historySync": {
+      "heading": "History & iCloud Sync",
+      "textBefore": "Solo stores a local history of your transcriptions so you can review and reuse them. If you are signed into iCloud, this history is synced across your Apple devices using iCloud Key-Value Storage (iCloud KVS). This sync is handled entirely by Apple\u2019s infrastructure and is subject to ",
+      "applePolicyLink": "Apple\u2019s Privacy Policy",
+      "textAfter": ".",
+      "text2": "History entries are retained for up to 90 days and limited to 50 entries. You can delete your history at any time from within the app."
+    },
+    "keyboardExtension": {
+      "heading": "Keyboard Extension",
+      "text": "Solo includes a keyboard extension for iOS and iPadOS. The keyboard extension requests Open Access solely to communicate with the main Solo app via a shared App Group container. It does not access the network, and no keystrokes or text input are collected or transmitted."
+    },
+    "networkUsage": {
+      "heading": "Network Usage",
+      "text": "Solo does not make any network requests during normal operation. The macOS app includes a network client entitlement solely for initial model downloads via WhisperKit, which fetches the speech recognition model from Apple\u2019s servers on first launch. After the model is cached locally, no further network access is needed. Solo works fully offline."
+    },
+    "analytics": {
+      "heading": "Analytics & Tracking",
+      "text": "Solo does not include any analytics frameworks, crash reporters, advertising SDKs, or third-party tracking code. We do not collect usage data, device information, or any form of telemetry."
+    },
+    "thirdParty": {
+      "heading": "Third-Party Services",
+      "text": "Solo does not integrate with any third-party services. The only external dependency is Apple\u2019s iCloud KVS for optional history sync, which is governed by your Apple ID settings and Apple\u2019s own privacy policy."
+    },
+    "dataStorage": {
+      "heading": "Data Storage",
+      "intro": "All data is stored locally on your device:",
+      "macOS": "History is stored as a JSON file in the app\u2019s Application Support directory within the macOS sandbox.",
+      "iOS": "History is stored in the App Group shared container, accessible only by Solo and its keyboard extension.",
+      "preferencesLabel": "User preferences",
+      "preferences": "(writing style, custom instructions) are stored in UserDefaults on your device."
+    },
+    "childrenPrivacy": {
+      "heading": "Children\u2019s Privacy",
+      "text": "Solo does not collect any personal information from anyone, including children under 13. Since no data is transmitted from the app, there is no mechanism by which personal information could be collected."
+    },
+    "changes": {
+      "heading": "Changes to This Policy",
+      "text": "If this privacy policy is updated, the changes will be posted on this page with a revised date. Because Solo collects no data, changes are unlikely to affect your privacy."
+    },
+    "privacyContact": {
+      "heading": "Contact",
+      "textBefore": "If you have questions about this privacy policy, contact us at ",
+      "textAfter": "."
+    }
+  },
+  "contactPage": {
+    "metaTitle": "Contact \u2014 Solo",
+    "metaDescription": "Get in touch with the Solo team. We\u2019d love to hear from you.",
+    "title": "Contact",
+    "subtitle": "Have a question, feedback, or just want to say hello? We\u2019d love to hear from you.",
+    "getInTouch": "Get in Touch",
+    "ceoLabel": "CEO",
+    "ceoName": "Omid Bicker",
+    "emailLabel": "Email",
+    "emailNote": "You can also reach us directly via email if you prefer not to use the form.",
+    "sendMessage": "Send a Message",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "messageLabel": "Message",
+    "messagePlaceholder": "How can we help?",
+    "submitButton": "Send Message"
+  }
+}

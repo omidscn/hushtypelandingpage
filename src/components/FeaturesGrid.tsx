@@ -1,6 +1,6 @@
 "use client";
 
-import { FEATURES } from "@/lib/constants";
+import { useDictionary } from "@/lib/DictionaryProvider";
 import { useScrollAnimation } from "@/lib/useScrollAnimation";
 
 function FeatureIcon({ icon }: { icon: string }) {
@@ -57,26 +57,29 @@ function FeatureIcon({ icon }: { icon: string }) {
   }
 }
 
+const featureIcons = ["pen", "grid", "cloud", "chip"] as const;
+
 export default function FeaturesGrid() {
   const ref = useScrollAnimation<HTMLElement>();
+  const { dict } = useDictionary();
 
   return (
     <section ref={ref} className="scroll-reveal relative z-10 px-6 py-24">
       <div className="mx-auto max-w-6xl">
         <h2 className="mb-4 text-center text-sm font-medium tracking-widest uppercase text-text-tertiary">
-          Features
+          {dict.features.sectionLabel}
         </h2>
         <p className="mx-auto mb-16 max-w-lg text-center text-2xl font-semibold text-white md:text-3xl">
-          Everything you need to dictate
+          {dict.features.sectionTitle}
         </p>
         <div className="grid gap-4 sm:grid-cols-2">
-          {FEATURES.map((feature) => (
+          {dict.features.items.map((feature, i) => (
             <div
               key={feature.title}
               className="card-glow group rounded-2xl border border-border bg-bg-card p-7 transition-all duration-500 hover:border-border-hover hover:bg-bg-card-hover"
             >
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white/[0.04] text-text-secondary transition-colors duration-300 group-hover:text-white">
-                <FeatureIcon icon={feature.icon} />
+                <FeatureIcon icon={featureIcons[i]} />
               </div>
               <h3 className="mt-5 text-[15px] font-semibold text-white">{feature.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-text-secondary">
