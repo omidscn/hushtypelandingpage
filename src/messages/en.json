@@ -7,14 +7,31 @@
   },
   "header": {
     "brand": "Solo",
-    "cta": "Join Waitlist"
+    "cta": "Download"
   },
   "hero": {
     "headline": "Your voice. Your device. Your words.",
     "subhead": "Solo transcribes your speech and rewrites it with AI \u2014 entirely on your device. No cloud. No latency. No compromise.",
-    "ctaMac": "Join the Waitlist",
+    "ctaMac": "Download on the App Store",
     "ctaIphone": "Learn More",
-    "badge": "Be the first \u2014 macOS 26+ / iOS 26+ / iPadOS 26+"
+    "badge": "Be the first \u2014 macOS 26+ / iOS 26+ / iPadOS 26+",
+    "phaseRaw": "Raw speech",
+    "phaseProcessing": "Processing\u2026",
+    "phasePolished": "On-device AI rewrite",
+    "staysInside": "stays inside",
+    "rawPhrases": [
+      "uh so we talked about the Q2 roadmap thing and yeah we agreed on three milestones I think",
+      "hey team so can you look at that draft thing before thursday and like let me know what you think",
+      "remember to uh ping design about those component things whenever they get back to me"
+    ],
+    "polishedPhrases": [
+      "Meeting recap: discussed Q2 roadmap and agreed on the three milestones.",
+      "Email to team: please review the draft by Thursday and share feedback.",
+      "Note to self: follow up with design on the new component specs."
+    ],
+    "trustBadgeEU": "EU Data\u00A0Protection",
+    "trustBadgeGDPR": "GDPR\u00A0Compliant",
+    "trustBadgeMadeGermany": "Made in\u00A0Germany"
   },
   "platformCards": {
     "sectionLabel": "Available on",
@@ -58,7 +75,10 @@
       { "label": "WhisperKit", "detail": "Speech \u2192 Text" },
       { "label": "Apple Foundation Models", "detail": "AI Rewrite" },
       { "label": "Polished Text" }
-    ]
+    ],
+    "processingBadge": "Processing on-device",
+    "deviceNote": "All processing happens on your Apple Silicon chip",
+    "noDataNote": "No data transmitted"
   },
   "privacy": {
     "sectionLabel": "Privacy",
@@ -102,20 +122,29 @@
   },
   "cta": {
     "headline": "Ready to speak freely?",
-    "subhead": "Be the first to try Solo. Sign up for early access.",
-    "formPlaceholder": "you@example.com",
-    "formButton": "Join the Waitlist",
-    "submitting": "Joining...",
-    "successHeadline": "You\u2019re on the list!",
-    "successMessage": "We\u2019ll notify you when Solo is ready.",
-    "errorGeneric": "Something went wrong. Please try again.",
-    "errorNetwork": "Network error. Please check your connection and try again."
+    "subhead": "Solo is now available on the App Store.",
+    "downloadButton": "Download on the App Store"
+  },
+  "privacyManifesto": {
+    "badgeLabel": "Privacy Architecture",
+    "body": "Most apps say they respect your privacy. Solo makes it technically impossible to violate it. There is no server. There is no upload. There is no way your voice could ever leave your device.",
+    "soloLabel": "Solo",
+    "othersLabel": "Other apps",
+    "ourCaption": "Processed on your chip.\nNever transmitted.",
+    "theirCaption": "Sent to remote servers.\nStored. Analyzed. Monetized.",
+    "statsLabels": [
+      { "label": "bytes sent to cloud", "sub": "Ever. Not once." },
+      { "label": "network calls during use", "sub": "Works fully offline." },
+      { "label": "third-party trackers", "sub": "No SDKs. No analytics." }
+    ],
+    "bottomStatement": "Solo runs on your Apple Silicon chip using WhisperKit and Apple Foundation Models. No model calls leave your device. No exceptions."
   },
   "footer": {
     "brand": "Solo",
     "privacyPolicy": "Privacy Policy",
     "contact": "Contact",
-    "copyright": "\u00a9 {year} Solo. All rights reserved."
+    "copyright": "\u00a9 {year} Solo. All rights reserved.",
+    "termsOfUse": "Terms of Use"
   },
   "privacyPage": {
     "metaTitle": "Privacy Policy \u2014 Solo",
@@ -179,6 +208,72 @@
     "privacyContact": {
       "heading": "Contact",
       "textBefore": "If you have questions about this privacy policy, contact us at ",
+      "textAfter": "."
+    }
+  },
+  "termsPage": {
+    "metaTitle": "Terms of Use \u2014 Solo Voice",
+    "metaDescription": "Terms of Use for Solo Voice. Read about your rights and responsibilities when using the Solo app.",
+    "title": "Terms of Use",
+    "lastUpdated": "Last updated: February 16, 2026",
+    "acceptance": {
+      "heading": "Acceptance of Terms",
+      "text": "By downloading, installing, or using Solo Voice (\u201cthe App\u201d), you agree to be bound by these Terms of Use. If you do not agree to these terms, do not use the App."
+    },
+    "serviceDescription": {
+      "heading": "Description of the Service",
+      "text": "Solo Voice is a privacy-first voice dictation application for macOS and iOS. The App transcribes your speech using WhisperKit and rewrites it using Apple Foundation Models \u2014 entirely on your device. No audio, text, or personal data is sent to any external server."
+    },
+    "subscriptionTerms": {
+      "heading": "Subscription & Purchase Terms",
+      "intro": "Solo Voice offers the following purchase options:",
+      "items": [
+        "A 14-day free trial is available for new users.",
+        "Auto-renewable subscriptions are available on a monthly or yearly basis.",
+        "A lifetime one-time purchase option is also available.",
+        "All purchases are processed through the Apple App Store and are subject to Apple\u2019s terms and conditions.",
+        "Subscriptions automatically renew unless canceled at least 24 hours before the end of the current billing period.",
+        "You can manage or cancel your subscription at any time through your Apple ID settings.",
+        "Solo Voice supports Family Sharing, allowing eligible purchases to be shared with family members."
+      ]
+    },
+    "userResponsibilities": {
+      "heading": "User Responsibilities",
+      "text": "You agree to use the App only for lawful purposes and in accordance with these terms. You shall not misuse the App, attempt to reverse-engineer it, or use it in any way that could harm, disable, or impair the App or interfere with other users."
+    },
+    "intellectualProperty": {
+      "heading": "Intellectual Property",
+      "text": "The App and all associated content, including but not limited to software, design, text, and graphics, are the intellectual property of the developer. You are granted a limited, non-exclusive, non-transferable license to use the App for personal, non-commercial purposes."
+    },
+    "privacyReference": {
+      "heading": "Privacy",
+      "textBefore": "Your privacy is fundamental to Solo Voice. All processing happens on your device. For full details, please read our ",
+      "linkText": "Privacy Policy",
+      "textAfter": "."
+    },
+    "warranties": {
+      "heading": "Disclaimer of Warranties",
+      "text": "The App is provided \u201cas is\u201d and \u201cas available\u201d without warranties of any kind, whether express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, or non-infringement."
+    },
+    "liability": {
+      "heading": "Limitation of Liability",
+      "text": "To the maximum extent permitted by applicable law, the developer shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses resulting from your use of the App."
+    },
+    "termination": {
+      "heading": "Termination",
+      "text": "We reserve the right to suspend or terminate your access to the App at any time, without prior notice, if you violate these Terms of Use or engage in conduct that we determine to be harmful to the App or other users."
+    },
+    "changesToTerms": {
+      "heading": "Changes to These Terms",
+      "text": "We may update these Terms of Use from time to time. Changes will be posted on this page with a revised date. Your continued use of the App after any changes constitutes acceptance of the updated terms."
+    },
+    "governingLaw": {
+      "heading": "Governing Law",
+      "text": "These Terms of Use are governed by and construed in accordance with the laws of the Federal Republic of Germany and applicable European Union regulations. Any disputes arising from or related to these terms shall be subject to the exclusive jurisdiction of the courts of Germany."
+    },
+    "contact": {
+      "heading": "Contact",
+      "textBefore": "If you have questions about these Terms of Use, contact us at ",
       "textAfter": "."
     }
   },

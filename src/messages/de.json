@@ -7,14 +7,31 @@
   },
   "header": {
     "brand": "Solo",
-    "cta": "Warteliste"
+    "cta": "Laden"
   },
   "hero": {
     "headline": "Your voice. Your device. Your words.",
     "subhead": "Solo transkribiert deine Sprache und \u00fcberarbeitet sie mit KI \u2014 komplett auf deinem Ger\u00e4t. Keine Cloud. Keine Latenz. Kein Kompromiss.",
-    "ctaMac": "Auf die Warteliste",
+    "ctaMac": "Im App Store laden",
     "ctaIphone": "Mehr erfahren",
-    "badge": "Sei dabei \u2014 macOS 26+ / iOS 26+ / iPadOS 26+"
+    "badge": "Sei dabei \u2014 macOS 26+ / iOS 26+ / iPadOS 26+",
+    "phaseRaw": "Rohes Diktat",
+    "phaseProcessing": "Verarbeitung\u2026",
+    "phasePolished": "KI-\u00dcberarbeitung auf dem Ger\u00e4t",
+    "staysInside": "bleibt hier",
+    "rawPhrases": [
+      "\u00e4hm also wir haben \u00fcber das Q2-Roadmap-Ding geredet und ja wir haben uns auf drei Meilensteine geeinigt glaub ich",
+      "hey Team also k\u00f6nnt ihr euch den Entwurf mal vor Donnerstag anschauen und mir sagen was ihr denkt",
+      "daran denken \u00e4hm das Design wegen den Komponenten-Sachen anschreiben wenn die sich melden"
+    ],
+    "polishedPhrases": [
+      "Meeting-Zusammenfassung: Q2-Roadmap besprochen und drei Meilensteine festgelegt.",
+      "E-Mail ans Team: Bitte den Entwurf bis Donnerstag pr\u00fcfen und Feedback geben.",
+      "Erinnerung: Design bez\u00fcglich der neuen Komponentenspezifikationen kontaktieren."
+    ],
+    "trustBadgeEU": "EU-Datenschutz",
+    "trustBadgeGDPR": "DSGVO-konform",
+    "trustBadgeMadeGermany": "Made in\u00A0Germany"
   },
   "platformCards": {
     "sectionLabel": "Verf\u00fcgbar auf",
@@ -58,7 +75,10 @@
       { "label": "WhisperKit", "detail": "Sprache \u2192 Text" },
       { "label": "Apple Foundation Models", "detail": "KI-\u00dcberarbeitung" },
       { "label": "Fertiger Text" }
-    ]
+    ],
+    "processingBadge": "Verarbeitung auf dem Ger\u00e4t",
+    "deviceNote": "Gesamte Verarbeitung auf deinem Apple-Silicon-Chip",
+    "noDataNote": "Keine Daten\u00fcbertragung"
   },
   "privacy": {
     "sectionLabel": "Datenschutz",
@@ -102,20 +122,29 @@
   },
   "cta": {
     "headline": "Bereit, frei zu sprechen?",
-    "subhead": "Sei unter den Ersten, die Solo ausprobieren. Melde dich f\u00fcr den Early Access an.",
-    "formPlaceholder": "du@beispiel.de",
-    "formButton": "Auf die Warteliste",
-    "submitting": "Wird eingetragen...",
-    "successHeadline": "Du bist auf der Liste!",
-    "successMessage": "Wir benachrichtigen dich, wenn Solo bereit ist.",
-    "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
-    "errorNetwork": "Netzwerkfehler. Bitte \u00fcberpr\u00fcfe deine Verbindung und versuche es erneut."
+    "subhead": "Solo ist jetzt im App Store erhältlich.",
+    "downloadButton": "Im App Store laden"
+  },
+  "privacyManifesto": {
+    "badgeLabel": "Datenschutz-Architektur",
+    "body": "Die meisten Apps behaupten, deine Privatsph\u00e4re zu respektieren. Solo macht es technisch unm\u00f6glich, sie zu verletzen. Es gibt keinen Server. Kein Upload. Keine M\u00f6glichkeit, dass deine Stimme jemals dein Ger\u00e4t verl\u00e4sst.",
+    "soloLabel": "Solo",
+    "othersLabel": "Andere Apps",
+    "ourCaption": "Verarbeitung auf deinem Chip.\nNie \u00fcbertragen.",
+    "theirCaption": "An Remote-Server gesendet.\nGespeichert. Analysiert. Monetarisiert.",
+    "statsLabels": [
+      { "label": "Bytes in die Cloud gesendet", "sub": "Nie. Kein einziges Mal." },
+      { "label": "Netzwerkaufrufe w\u00e4hrend der Nutzung", "sub": "Funktioniert vollst\u00e4ndig offline." },
+      { "label": "Drittanbieter-Tracker", "sub": "Keine SDKs. Keine Analyse." }
+    ],
+    "bottomStatement": "Solo l\u00e4uft auf deinem Apple-Silicon-Chip mit WhisperKit und Apple Foundation Models. Keine Modellanfragen verlassen dein Ger\u00e4t. Keine Ausnahmen."
   },
   "footer": {
     "brand": "Solo",
     "privacyPolicy": "Datenschutzerkl\u00e4rung",
     "contact": "Kontakt",
-    "copyright": "\u00a9 {year} Solo. Alle Rechte vorbehalten."
+    "copyright": "\u00a9 {year} Solo. Alle Rechte vorbehalten.",
+    "termsOfUse": "Nutzungsbedingungen"
   },
   "privacyPage": {
     "metaTitle": "Datenschutzerkl\u00e4rung \u2014 Solo",
@@ -179,6 +208,72 @@
     "privacyContact": {
       "heading": "Kontakt",
       "textBefore": "Bei Fragen zu dieser Datenschutzerkl\u00e4rung kontaktiere uns unter ",
+      "textAfter": "."
+    }
+  },
+  "termsPage": {
+    "metaTitle": "Nutzungsbedingungen \u2014 Solo Voice",
+    "metaDescription": "Nutzungsbedingungen f\u00fcr Solo Voice. Informiere dich \u00fcber deine Rechte und Pflichten bei der Nutzung der Solo-App.",
+    "title": "Nutzungsbedingungen",
+    "lastUpdated": "Zuletzt aktualisiert: 16. Februar 2026",
+    "acceptance": {
+      "heading": "Annahme der Bedingungen",
+      "text": "Durch das Herunterladen, Installieren oder Nutzen von Solo Voice (\u201edie App\u201c) erkl\u00e4rst du dich mit diesen Nutzungsbedingungen einverstanden. Wenn du diesen Bedingungen nicht zustimmst, nutze die App nicht."
+    },
+    "serviceDescription": {
+      "heading": "Beschreibung des Dienstes",
+      "text": "Solo Voice ist eine datenschutzorientierte Sprachdiktier-App f\u00fcr macOS und iOS. Die App transkribiert deine Sprache mit WhisperKit und \u00fcberarbeitet sie mit Apple Foundation Models \u2014 vollst\u00e4ndig auf deinem Ger\u00e4t. Keine Audio-, Text- oder pers\u00f6nlichen Daten werden an einen externen Server gesendet."
+    },
+    "subscriptionTerms": {
+      "heading": "Abonnement- & Kaufbedingungen",
+      "intro": "Solo Voice bietet folgende Kaufoptionen:",
+      "items": [
+        "Eine 14-t\u00e4gige kostenlose Testphase ist f\u00fcr neue Nutzer verf\u00fcgbar.",
+        "Automatisch verl\u00e4ngerbare Abonnements sind monatlich oder j\u00e4hrlich verf\u00fcgbar.",
+        "Eine einmalige Lifetime-Kaufoption ist ebenfalls verf\u00fcgbar.",
+        "Alle K\u00e4ufe werden \u00fcber den Apple App Store abgewickelt und unterliegen Apples Gesch\u00e4ftsbedingungen.",
+        "Abonnements verl\u00e4ngern sich automatisch, es sei denn, sie werden mindestens 24 Stunden vor Ablauf des aktuellen Abrechnungszeitraums gek\u00fcndigt.",
+        "Du kannst dein Abonnement jederzeit \u00fcber deine Apple-ID-Einstellungen verwalten oder k\u00fcndigen.",
+        "Solo Voice unterst\u00fctzt Familienfreigabe, wodurch berechtigte K\u00e4ufe mit Familienmitgliedern geteilt werden k\u00f6nnen."
+      ]
+    },
+    "userResponsibilities": {
+      "heading": "Nutzerpflichten",
+      "text": "Du verpflichtest dich, die App nur f\u00fcr rechtm\u00e4\u00dfige Zwecke und in \u00dcbereinstimmung mit diesen Bedingungen zu nutzen. Du darfst die App nicht missbrauchen, versuchen sie zu dekompilieren oder sie in einer Weise nutzen, die die App besch\u00e4digen, deaktivieren oder beeintr\u00e4chtigen oder andere Nutzer st\u00f6ren k\u00f6nnte."
+    },
+    "intellectualProperty": {
+      "heading": "Geistiges Eigentum",
+      "text": "Die App und alle zugeh\u00f6rigen Inhalte, einschlie\u00dflich, aber nicht beschr\u00e4nkt auf Software, Design, Text und Grafiken, sind geistiges Eigentum des Entwicklers. Dir wird eine eingeschr\u00e4nkte, nicht-exklusive, nicht \u00fcbertragbare Lizenz zur Nutzung der App f\u00fcr pers\u00f6nliche, nicht-kommerzielle Zwecke gew\u00e4hrt."
+    },
+    "privacyReference": {
+      "heading": "Datenschutz",
+      "textBefore": "Dein Datenschutz ist f\u00fcr Solo Voice grundlegend. Alle Verarbeitung findet auf deinem Ger\u00e4t statt. F\u00fcr vollst\u00e4ndige Details lies bitte unsere ",
+      "linkText": "Datenschutzerkl\u00e4rung",
+      "textAfter": "."
+    },
+    "warranties": {
+      "heading": "Gew\u00e4hrleistungsausschluss",
+      "text": "Die App wird \u201ewie besehen\u201c und \u201ewie verf\u00fcgbar\u201c ohne jegliche Gew\u00e4hrleistung bereitgestellt, weder ausdr\u00fccklich noch stillschweigend, einschlie\u00dflich, aber nicht beschr\u00e4nkt auf stillschweigende Gew\u00e4hrleistungen der Marktg\u00e4ngigkeit, Eignung f\u00fcr einen bestimmten Zweck oder Nichtverletzung."
+    },
+    "liability": {
+      "heading": "Haftungsbeschr\u00e4nkung",
+      "text": "Im maximal gesetzlich zul\u00e4ssigen Umfang haftet der Entwickler nicht f\u00fcr indirekte, zuf\u00e4llige, besondere, Folge- oder Strafsch\u00e4den oder f\u00fcr entgangene Gewinne oder Einnahmen, unabh\u00e4ngig davon, ob sie direkt oder indirekt entstanden sind, oder f\u00fcr Datenverlust, Nutzungsausfall, Gesch\u00e4ftswert oder andere immaterielle Verluste, die sich aus deiner Nutzung der App ergeben."
+    },
+    "termination": {
+      "heading": "K\u00fcndigung",
+      "text": "Wir behalten uns das Recht vor, deinen Zugang zur App jederzeit und ohne vorherige Ank\u00fcndigung auszusetzen oder zu beenden, wenn du gegen diese Nutzungsbedingungen verst\u00f6\u00dft oder ein Verhalten zeigst, das wir als sch\u00e4dlich f\u00fcr die App oder andere Nutzer erachten."
+    },
+    "changesToTerms": {
+      "heading": "\u00c4nderungen dieser Bedingungen",
+      "text": "Wir k\u00f6nnen diese Nutzungsbedingungen von Zeit zu Zeit aktualisieren. \u00c4nderungen werden auf dieser Seite mit einem aktualisierten Datum ver\u00f6ffentlicht. Deine fortgesetzte Nutzung der App nach \u00c4nderungen gilt als Zustimmung zu den aktualisierten Bedingungen."
+    },
+    "governingLaw": {
+      "heading": "Anwendbares Recht",
+      "text": "Diese Nutzungsbedingungen unterliegen dem Recht der Bundesrepublik Deutschland und den anwendbaren Vorschriften der Europ\u00e4ischen Union und werden entsprechend ausgelegt. Streitigkeiten, die sich aus oder im Zusammenhang mit diesen Bedingungen ergeben, unterliegen der ausschlie\u00dflichen Zust\u00e4ndigkeit der deutschen Gerichte."
+    },
+    "contact": {
+      "heading": "Kontakt",
+      "textBefore": "Bei Fragen zu diesen Nutzungsbedingungen kontaktiere uns unter ",
       "textAfter": "."
     }
   },

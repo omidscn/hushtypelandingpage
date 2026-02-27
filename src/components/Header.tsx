@@ -25,13 +25,13 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-[#050505]/80 backdrop-blur-2xl border-b border-border"
+          ? "bg-[#050505]/90 backdrop-blur-2xl border-b border-white/[0.06]"
           : "bg-transparent"
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href={isGerman ? "/de" : "/"} className="flex items-center gap-2.5">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <a href={isGerman ? "/de" : "/"} className="flex items-center gap-2.5 group">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10B981" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.6)]">
             <path d="M2 10v3"/>
             <path d="M6 6v11"/>
             <path d="M10 3v18"/>
@@ -44,13 +44,15 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <a
             href={switchPath}
-            className="text-sm font-medium text-white/60 transition-colors hover:text-white"
+            className="text-sm font-medium text-white/40 transition-colors hover:text-white/80"
           >
             {switchLabel}
           </a>
           <a
-            href="#download"
-            className="rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm font-medium text-white transition-all duration-300 hover:bg-white/10 hover:border-white/20"
+            href="https://apps.apple.com/us/app/solo-voice/id6758554606"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full border border-teal-border bg-teal-muted px-5 py-2 text-sm font-medium text-teal transition-all duration-300 hover:bg-teal/15 hover:border-teal/40 hover:shadow-[0_0_20px_rgba(16,185,129,0.15)]"
           >
             {dict.header.cta}
           </a>
